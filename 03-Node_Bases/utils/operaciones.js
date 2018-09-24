@@ -28,8 +28,8 @@ let listar = async (limite, base) => {
     return data.contenido;
 };
 
-let generar = async (base) => {
-    let data = await multiplicar(base);
+let generar = async (limite, base) => {
+    let data = await multiplicar(limite, base);
     return await generarArchivo(data);
 };
 
